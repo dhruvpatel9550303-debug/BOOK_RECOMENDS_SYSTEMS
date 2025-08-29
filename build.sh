@@ -2,5 +2,7 @@
 # exit on error
 set -o errexit
 
-pip install --upgrade pip
+echo "Installing dependencies..."
+pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
+echo "Dependencies installed successfully!"
